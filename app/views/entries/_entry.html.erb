@@ -1,0 +1,15 @@
+<div class="jumbotron" style="background-color:#B9C3A5; font-family: Verdana, Geneva, sans-serif; padding: 20px; margin-top: 0px;margin-bottom: 10px;">
+	<%= entry.topic%>
+	</br></br>
+	
+	<div class="jumbotron" style="background-color:#CED9BA; font-family: Verdana, Geneva, sans-serif; padding: 20px">
+		<%= entry.body %>
+	</div>
+	written by <strong><%= entry.user.name %></strong> on <%= entry.updated_at.strftime("%Y / %m / %d") %> with <strong>words</strong>: <%= entry.word_count %>
+	
+	<% entry.comments.each do |i| %>
+		<%= render partial: 'comments/comment' ,:locals => {:comment=> i}%>
+	<% end %>
+	
+</div>
+

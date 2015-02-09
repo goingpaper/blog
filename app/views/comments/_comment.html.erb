@@ -1,0 +1,6 @@
+<div class="jumbotron" style="background-color:#CED9BA; font-family: Verdana, Geneva, sans-serif; padding: 20px">
+	<%= comment.body %>
+	<% comment.comments.each do |i| %>
+		<%= render partial: 'comment' ,:locals => {:comment=> i}%>
+	<% end %>
+</div>

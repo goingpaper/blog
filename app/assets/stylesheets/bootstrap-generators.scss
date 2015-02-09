@@ -1,0 +1,39 @@
+@import "bootstrap-variables.scss";
+@import "bootstrap-sprockets.scss";
+@import "bootstrap.scss";
+
+body {
+  padding-top: $navbar-height + 10px;
+}
+
+.page-header {
+  a.btn {
+    float: right;
+  }
+
+  a.btn + a.btn {
+    margin-right: 8px;
+  }
+}
+
+input[type="radio"], input[type="checkbox"] {
+  width: initial;
+  height: initial;
+  margin-top: 7px;
+}
+
+.my-fluid-container {
+
+  padding-left: 15px;
+
+  padding-right: 15px;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+}
+.jumbotron{
+  
+  font-family: Verdana, Geneva, sans-serif
+}

@@ -1,0 +1,5 @@
+<% @images.each do |i| %>
+<%= render :partial => "image_tag", :locals => {:image => i} %>
+-for rendering multiple entries on one page
+
+-lookup displaying custom dates

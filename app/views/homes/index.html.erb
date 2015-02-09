@@ -1,0 +1,27 @@
+
+<div class="col-md-8">
+<% @entries.each do |i| %>
+	<%= render :partial => "entries/entry", :locals => {:entry=> i} %>
+<% end %>
+</div>
+    <div class="col-md-4" style="margin-top:-0px; margin-left:-20px; margin-bottom: -200px; padding-right: 125px; ">
+    	<div class="jumbotron" style="background-color: #878179; color:white; ">
+	    	<p>
+	    		<strong>Quick Info</strong></br>
+	    		number of entries: <%= @entries.length %></br>
+	    		total words: <%= @total %></br>
+	    		most mentioned monthly word: </br>
+	    	</p>
+    	</div>
+    	<div class="jumbotron" style="background-color: #A4A9A6; color:white; margin-top:-20px; ">
+	    	<p>
+	    		<strong>Top Rated Posts</strong></br>
+	    		number of entries: <%= @entries.length %></br>
+	    		total words: </br>
+	    		most mentioned monthly word: </br>
+	    	</p>
+    	</div>
+    </div>
+
+
+

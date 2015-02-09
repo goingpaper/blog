@@ -1,0 +1,30 @@
+<div class="col-md-8">
+	<%= form_for(@entry) do |f| %>
+			<% if @entry.errors.any? %>
+			    <div id="error_explanation">
+			      <h2><%= pluralize(@entry.errors.count, "error") %> prohibited this item from being saved:</h2>
+		
+			    </div>
+		  	<% end %>
+	<div class="jumbotron" style="background-color:#B9C3A5; font-family: Verdana, Geneva, sans-serif; padding: 30px">
+		<div class="field">
+		    	<%= f.label :topic%><br>
+		    	<%= f.text_field :topic %>
+		</div></strong>
+		
+		<div class="jumbotron" style="background-color:#CED9BA; font-family: Verdana, Geneva, sans-serif; padding: 30px">
+			
+		  	<div class="field">
+		    	<%= f.label :body%><br>
+		    	<%= f.text_area :body, :cols => "80", :rows => "10", :id =>'grower'%>
+		  	</div>
+			</br>
+			
+			</br>
+			<div class="actions">
+				<%= f.submit %>
+			</div>
+		</div>
+	</div>
+	<% end %>
+</div>

@@ -1,0 +1,7 @@
+<div class="col-md-11" style = "margin-bottom: 45px;margin-top: 30px;">
+	<% @entries.each do |i| %>
+		<strong><%= i.topic%></strong> : <%= i.updated_at.strftime("%Y / %m / %d") %>
+		<%= link_to 'Destroy', i, method: :delete, data: { confirm: 'Are you sure?' } %>
+		</br>
+	<% end %>
+</div>
